@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>it-dfs10-tp1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<main class="container-fluid">
+		<header>
+			<h1>The best Javascript</h1>
+			<nav>
+				<ul class="nav nav-tabs">
+          <li role="presentation"><a href="index.html">Home</a></li>
+					<li role="presentation"><a href="profil.html">Profile</a></li>
+					<li role="presentation"><a href="message.html">Messages</a></li>
+					<li role="presentation"><a href="html5.php">HTML5</a></li>
+					<li role="presentation"><a href="css3.html">CSS3</a></li>
+					<li role="presentation" class="active"><a href="javascript.html">Javascript</a></li>
+					<li role="presentation"><a href="php.html">Php</a></li>
+					<li >		<section>
+								<form method="post" action="">
+									<input type="text" id="searchLabel" />
+									<button>Rechercher</button>
+								</form>
+							</section>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section id="text" class="col-md-6">
+			<h3>le Javascript de ce site pour l'API youtube</h3>
+			<article>
+				<p class="code">
+          // Loads the IFrame Player API code asynchronously.<br/>
+          var tag = document.createElement('script');<br/>
+          tag.src = "https://www.youtube.com/iframe_api";<br/>
+
+          var firstScriptTag = document.getElementsByTagName('script')[0];<br/>
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);<br/>
+
+          // This function creates an iframe (and YouTube player) after the API code downloads.<br/>
+          var player;<br/>
+          function onYouTubeIframeAPIReady()<br/>
+          {<br/>
+            player = new YT.Player('player', {<br/>
+              height: '360',<br/>
+              width: '640',<br/>
+              videoId: 'M7lc1UVf-VE',<br/>
+              events: {<br/>
+                'onReady': onPlayerReady,<br/>
+                'onStateChange': onPlayerStateChange<br/>
+              }<br/>
+            });<br/>
+          }<br/>
+
+          // The API will call this function when the video player is ready.<br/>
+          function onPlayerReady(event) {<br/>
+            event.target.playVideo();<br/>
+          }<br/>
+
+          // The API calls this function when the player's state changes.<br/>
+          //    The function indicates that when playing a video (state=1),<br/>
+          //    the player should play for six seconds and then stop.<br/>
+          var done = false;<br/>
+          function onPlayerStateChange(event) {<br/>
+            if (event.data == YT.PlayerState.PLAYING && !done) {<br/>
+              setTimeout(stopVideo, 6000);<br/>
+              done = true;<br/>
+            }<br/>
+          }<br/>
+          function stopVideo() {<br/>
+            player.stopVideo();<br/>
+          }<br/>
+        </p>
+			</article>
+		</section>
+		<section class="col-md-6">
+      <h3>le Javascript de ce site utilisant le localSotrage</h3>
+			<article>
+        <p class="code">
+        $(document).ready(function(){<br/>
+            $.getJSON("json/data.json");<br/>
+        })<br/><br/>
+        function clickCounter() {<br/>
+          if(typeof(Storage) !== "undefined") {<br/>
+            if (localStorage.clickcount) {<br/>
+              localStorage.clickcount = Number(localStorage.clickcount)+1;<br/>
+            } else {<br/>
+              localStorage.clickcount = 1;<br/>
+            }<br/>
+            document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";<br/>
+          } else {<br/>
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";<br/>
+          }<br/>
+        }<br/>
+      </p>
+			</article>
+		</section>
+		<footer>
+			It akademy
+		</footer>
+	</main>
+	<script type="text/javascript" src="js/player.js"></script>
+</body>
+</html>

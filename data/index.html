@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>it-dfs10-tp1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<main class="container-fluid">
+		<header>
+			<h1>The best site</h1>
+			<nav>
+				<ul class="nav nav-tabs">
+				  <li role="presentation" class="active"><a href="index.html">Home</a></li>
+					<li role="presentation"><a href="profil.html">Profile</a></li>
+					<li role="presentation"><a href="message.html">Messages</a></li>
+					<li role="presentation"><a href="html5.php">HTML5</a></li>
+					<li role="presentation"><a href="css3.html">CSS3</a></li>
+					<li role="presentation"><a href="javascript.html">Javascript</a></li>
+					<li role="presentation"><a href="php.html">Php</a></li>
+					<li id="recherche">	<section>
+								<form method="post" action="">
+									<input type="text" id="searchLabel" />
+									<button>Rechercher</button>
+								</form>
+							</section>
+					</li>
+				</ul>
+			</nav>
+			<script>
+			function clickCounter() {
+				if(typeof(Storage) !== "undefined") {
+					if (localStorage.clickcount) {
+						localStorage.clickcount = Number(localStorage.clickcount)+1;
+					} else {
+						localStorage.clickcount = 1;
+					}
+					document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+				} else {
+					document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+				}
+			}
+			</script>
+		</header>
+		<section id="text" class="col-md-6">
+			<h3>Apprend a coder avec moi</h3>
+			<article>
+				<p>Ce site est fait pour t'apprendre les bases de la programation web en effets on y trouve du HTML, CSS mais aussi du PHP, javascript.
+				Un exemple de javascript utilisant le local storage juste dessous :</p>
+				<br/>
+				<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+				<div id="result"></div>
+				<p>Click the button to see the counter increase.</p>
+				<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+			</article>
+		</section>
+		<section id="player"></section>
+		<section id="videoList" class="col-md-6">
+			<h3>Apprend a coder en video</h3>
+			<article>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/8FqZZrbnwkM" frameborder="0" allowfullscreen></iframe>
+			</article>
+		</section>
+		<footer>
+			It akademy
+		</footer>
+	</main>
+	<!--<script type="text/javascript" src="js/player.js"></script>-->
+</body>
+</html>
