@@ -18,7 +18,7 @@ Retour UX de l'autre groupe:
 - Apparition constante d'une popup sur la page Message, celle-ci devrait apparaître au moins après que la page ai chargée.
 - Alliance des Couleurs.(corrigé)
 - Eventuellement faire moins de pages mais avec un peu plus de contenus
-- Footer qui cache du texte 
+- Footer qui cache du texte (corrigé)
 - Texte en francais pour le compteur (corrigé)
 - Mise en forme du code (indentation/couleurs) comme sur les forums pourrait être sympa
 
