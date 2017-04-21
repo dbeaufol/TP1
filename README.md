@@ -18,3 +18,6 @@ Retour UX de l'autre groupe:
 - Footer qui cache du texte 
 - Texte en francais pour le compteur (corrigé)
 - Mise en forme du code (indentation/couleurs) comme sur les forums pourrait être sympa
+
+
+-Attention le contenu du code est dans le dossier data
