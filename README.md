@@ -1,11 +1,14 @@
 # TP1 
 Menbre:
 -Beaufol Denis
+
 Fonctionalitée:
 -Apprendre a coder
+
 Bugs connu:
 -Probléme sur la barre de recherhce
 -Bugs sur la page profil (le js n'est pas fini)
+
 Retour UX de l'autre groupe:
 - Barre recherche placée différement selon la page(corrigé)
 - Bug quand j'enregistre un message et que je reviens sur l'onglet
