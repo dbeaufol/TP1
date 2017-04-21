@@ -69,8 +69,7 @@
           		&lt;section id="text" class="col-md-6"&gt;<br/>
           			&lt;h3&gt;The best Lorem&lt;/h3&gt;<br/>
           			&lt;article&gt;<br/>
-          				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
-          					 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;<br/>
+          				&lt;p&gt;Ce site est fait pour t'apprendre les bases de la programation web en effets on y trouve du HTML, CSS mais aussi du PHP, javascript..&lt;/p&gt;<br/>
           			&lt;/article&gt;<br/>
           		&lt;/section&gt;<br/>
           		&lt;section id="player"&gt;&lt;/section&gt;<br/>
