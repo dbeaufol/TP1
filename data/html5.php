@@ -86,11 +86,12 @@
           	&lt;script type="text/javascript" src="js/player.js"&gt;&lt;/script&gt;<br/>
           &lt;/body&gt;<br/>
           &lt;/html&gt;<br/>
+					<br/>
 				</p>
 			</article>
 		</section>
 		<footer>
-			It akademy
+			<p>@Copyright:It akademy The best site by Beaufol Denis</p>
 		</footer>
 	</main>
 	<script type="text/javascript" src="js/player.js"></script>
