@@ -14,16 +14,16 @@
 			<nav>
 				<ul class="nav nav-tabs">
           <li role="presentation"><a href="index.html">Home</a></li>
-					<li role="presentation"><a href="profil.html">Profile</a></li>
+					<li role="presentation"><a href="profil.html">Profil</a></li>
 					<li role="presentation"><a href="message.html">Messages</a></li>
 					<li role="presentation"><a href="html5.php">HTML5</a></li>
 					<li role="presentation"><a href="css3.html">CSS3</a></li>
 					<li role="presentation" class="active"><a href="javascript.html">Javascript</a></li>
 					<li role="presentation"><a href="php.html">Php</a></li>
-					<li >		<section>
+					<li class="recherche">		<section>
 								<form method="post" action="">
-									<input type="text" id="searchLabel" />
-									<button>Rechercher</button>
+									<input class="bouton" type="text" id="searchLabel" />
+									<button class="bouton">Rechercher</button>
 								</form>
 							</section>
 					</li>
@@ -91,9 +91,9 @@
             } else {<br/>
               localStorage.clickcount = 1;<br/>
             }<br/>
-            document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";<br/>
-          } else {<br/>
-            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";<br/>
+						document.getElementById("result").innerHTML = "Tu as cliqué le bouton " + localStorage.clickcount + " fois.";<br/>
+					} else {<br/>
+						document.getElementById("result").innerHTML = "Désolé, mais ton navigateur ne suporte pas le localStorage";<br/>
           }<br/>
         }<br/>
       </p>

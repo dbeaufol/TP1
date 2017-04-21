@@ -14,16 +14,16 @@
 			<nav>
 				<ul class="nav nav-tabs">
           <li role="presentation"><a href="index.html">Home</a></li>
-					<li role="presentation"><a href="profil.html">Profile</a></li>
+					<li role="presentation"><a href="profil.html">Profil</a></li>
 					<li role="presentation"><a href="message.html">Messages</a></li>
 					<li role="presentation" class="active"><a href="html5.php">HTML5</a></li>
 					<li role="presentation"><a href="css3.html">CSS3</a></li>
 					<li role="presentation"><a href="javascript.html">Javascript</a></li>
 					<li role="presentation"><a href="php.html">Php</a></li>
-					<li >		<section>
+					<li class="recherche">		<section>
 								<form method="post" action="">
-									<input type="text" id="searchLabel" />
-									<button>Rechercher</button>
+									<input class="bouton" type="text" id="searchLabel" />
+									<button class="bouton">Rechercher</button>
 								</form>
 							</section>
 					</li>

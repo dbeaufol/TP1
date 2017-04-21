@@ -14,46 +14,32 @@
 			<nav>
 				<ul class="nav nav-tabs">
 				  <li role="presentation" class="active"><a href="index.html">Home</a></li>
-					<li role="presentation"><a href="profil.html">Profile</a></li>
+					<li role="presentation"><a href="profil.html">Profil</a></li>
 					<li role="presentation"><a href="message.html">Messages</a></li>
 					<li role="presentation"><a href="html5.php">HTML5</a></li>
 					<li role="presentation"><a href="css3.html">CSS3</a></li>
 					<li role="presentation"><a href="javascript.html">Javascript</a></li>
 					<li role="presentation"><a href="php.html">Php</a></li>
-					<li id="recherche">	<section>
+					<li class="recherche">
+							<section>
 								<form method="post" action="">
-									<input type="text" id="searchLabel" />
-									<button>Rechercher</button>
+									<input class="bouton" type="text" id="searchLabel" />
+									<button class="bouton">Rechercher</button>
 								</form>
 							</section>
 					</li>
 				</ul>
 			</nav>
-			<script>
-			function clickCounter() {
-				if(typeof(Storage) !== "undefined") {
-					if (localStorage.clickcount) {
-						localStorage.clickcount = Number(localStorage.clickcount)+1;
-					} else {
-						localStorage.clickcount = 1;
-					}
-					document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-				} else {
-					document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-				}
-			}
-			</script>
 		</header>
 		<section id="text" class="col-md-6">
 			<h3>Apprend a coder avec moi</h3>
 			<article>
-				<p>Ce site est fait pour t'apprendre les bases de la programation web en effets on y trouve du HTML, CSS mais aussi du PHP, javascript.
-				Un exemple de javascript utilisant le local storage juste dessous :</p>
+				<p>Ce site est fait pour t'apprendre les bases de la programation web en effets on y trouve du HTML, CSS mais aussi du PHP, javascript.</p>
 				<br/>
-				<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+				<p><button class="bouton" onclick="clickCounter()" type="button">Click me!</button></p>
 				<div id="result"></div>
-				<p>Click the button to see the counter increase.</p>
-				<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+				<p>Click le bouton pour voir le nombres de fois que tu as apuyé dessus.</p>
+				<p>Ferme la page(ou window), et réessaye, le conteur continue de conter (il n'est pas réinitialisé").</p>
 			</article>
 		</section>
 		<section id="player"></section>
@@ -67,6 +53,20 @@
 			It akademy
 		</footer>
 	</main>
+	<script>
+	function clickCounter() {
+		if(typeof(Storage) !== "undefined") {
+			if (localStorage.clickcount) {
+				localStorage.clickcount = Number(localStorage.clickcount)+1;
+			} else {
+				localStorage.clickcount = 1;
+			}
+			document.getElementById("result").innerHTML = "Tu as cliqué le bouton " + localStorage.clickcount + " fois.";
+		} else {
+			document.getElementById("result").innerHTML = "Désolé, mais ton navigateur ne suporte pas le localStorage";
+		}
+	}
+	</script>
 	<!--<script type="text/javascript" src="js/player.js"></script>-->
 </body>
 </html>
